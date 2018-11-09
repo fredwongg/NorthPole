@@ -51,7 +51,6 @@ namespace SantaAPI.Data
                     Longitude = 72,
                     IsNaughty = false,
                     DateCreated = DateTime.UtcNow,
-                    CreatedBy = Guid.NewGuid(),
                     Email = "santa@np.com",
                     UserName = "santa",
                 };
@@ -81,7 +80,6 @@ namespace SantaAPI.Data
                     Longitude = 123,
                     IsNaughty = false,
                     DateCreated = DateTime.UtcNow,
-                    CreatedBy = Guid.NewGuid(),
                     Email = "tim@np.com",
                     UserName = "tim",
                 };
