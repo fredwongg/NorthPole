@@ -43,7 +43,6 @@ namespace SantaAPI.Controllers
                 Longitude = model.Longitude,
                 IsNaughty = model.IsNaughty,
                 DateCreated = DateTime.UtcNow,
-                CreatedBy = Guid.NewGuid(),
                 Email = model.Email,
                 UserName = model.FirstName,
             };

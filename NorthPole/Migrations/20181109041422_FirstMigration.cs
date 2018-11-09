@@ -50,11 +50,10 @@ namespace SantaAPI.Migrations
                     Province = table.Column<string>(nullable: false),
                     PostalCode = table.Column<string>(nullable: false),
                     Country = table.Column<string>(nullable: false),
-                    Latitude = table.Column<int>(nullable: false),
-                    Longitude = table.Column<int>(nullable: false),
+                    Latitude = table.Column<double>(nullable: false),
+                    Longitude = table.Column<double>(nullable: false),
                     IsNaughty = table.Column<bool>(nullable: false),
-                    DateCreated = table.Column<DateTime>(nullable: false),
-                    CreatedBy = table.Column<Guid>(nullable: false)
+                    DateCreated = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
