@@ -9,7 +9,7 @@ using SantaAPI.Data;
 namespace SantaAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20181108215345_FirstMigration")]
+    [Migration("20181113010713_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -147,8 +147,6 @@ namespace SantaAPI.Migrations
                     b.Property<string>("Country")
                         .IsRequired();
 
-                    b.Property<Guid>("CreatedBy");
-
                     b.Property<DateTime>("DateCreated");
 
                     b.Property<string>("Email")
@@ -164,13 +162,13 @@ namespace SantaAPI.Migrations
                     b.Property<string>("LastName")
                         .IsRequired();
 
-                    b.Property<int>("Latitude");
+                    b.Property<double>("Latitude");
 
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
 
-                    b.Property<int>("Longitude");
+                    b.Property<double>("Longitude");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);

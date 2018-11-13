@@ -34,18 +34,15 @@ namespace SantaAPI.ViewModels
         public string Country { get; set; }
 
         [Required]
-        public int Latitude { get; set; }
+        public double Latitude { get; set; }
 
         [Required]
-        public int Longitude { get; set; }
+        public double Longitude { get; set; }
 
         [Required]
-        public Boolean IsNaughty { get; set; }
+        public bool IsNaughty { get; set; }
 
         [Required]
         public DateTime DateCreated { get; set; }
-
-        [Required]
-        public Guid CreatedBy { get; set; }
     }
 }

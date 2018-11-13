@@ -145,8 +145,6 @@ namespace SantaAPI.Migrations
                     b.Property<string>("Country")
                         .IsRequired();
 
-                    b.Property<Guid>("CreatedBy");
-
                     b.Property<DateTime>("DateCreated");
 
                     b.Property<string>("Email")
@@ -162,13 +160,13 @@ namespace SantaAPI.Migrations
                     b.Property<string>("LastName")
                         .IsRequired();
 
-                    b.Property<int>("Latitude");
+                    b.Property<double>("Latitude");
 
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
 
-                    b.Property<int>("Longitude");
+                    b.Property<double>("Longitude");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);
